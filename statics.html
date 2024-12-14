@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics</title>
+    <link rel="stylesheet" href="project_homepage.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #222;
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .category-section {
+            background-color: #333;
+            padding: 10px 20px;
+            text-align: center;
+            border-bottom: 2px solid #444;
+        }
+
+        .category-section h2 {
+            color: #ffcc00;
+            font-size: 1.5rem;
+            margin: 0 0 10px;
+        }
+
+        .category-options {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .category-options span {
+            color: #ffffff;
+            background-color: #444;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .category-options span:hover {
+            background-color: #ffcc00;
+            color: #222;
+        }
+
+        .filter-section {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            color: #ffcc00;
+            font-size: 1rem;
+        }
+
+        select {
+            padding: 5px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 1px solid #444;
+            background-color: #333;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        select:hover {
+            background-color: #444;
+        }
+
+        h1, h2, h3 {
+            color: rgb(255, 196, 0);
+            font-size: 2rem;
+            margin: 20px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        .category-section {
+    background-color: #333;
+    padding: 10px 20px;
+    text-align: center;
+    border-bottom: 2px solid #444;
+    margin: 0; /* Ensure no unwanted space above or below */
+}
+
+.header + .category-section {
+    margin-top: 0; /* Ensure no gap between header and category */
+}
+
+        .header {
+    margin-bottom: 0; /* Remove any margin at the bottom of the header */
+}
+
+.category-section {
+    margin-top: 0; /* Remove any margin at the top of the category section */
+    padding-top: 5px; /* Optional: Reduce padding for tighter spacing */
+    padding-bottom: 5px; /* Optional: Reduce padding for tighter spacing */
+}
+
+        .d-flex .order-now-btn {
+    background-color: rgb(255, 196, 0);
+    border-color:rgb(255, 196, 0);
+    color: black;
+}
+
+    
+   
+    
+        </style>
+    
+</head>
+
+<body>
+    <header class="header">
+        <!-- Logo Section -->
+        <div class="logo-container">
+            <span>
+                <img src="/pictures/icon-removebg-preview.jpg" class="logo-img">
+            </span>
+            <a href="project_homepage.html"><h1>FORKLORE</h1></a>
+        </div>
+
+        <!-- Navigation Section -->
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="project_homepage.html#foodCarousel">
+                                <i class="fas fa-home"></i>Home
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="menu.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-bars"></i> Menu
+                              </a>
+                           
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="about.html">
+                                <i class="fas fa-info-circle"></i> About Us
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="project_homepage.html#Contact">
+                                <i class="fas fa-envelope"></i> Contact Us
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="project_homepage.html#gallery-section">
+                                <i class="fas fa-images"></i> Gallery
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/statics.html">
+                                <i class="fas fa-chart-bar"></i> Statics
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/reviews.html">
+                                <i class="fas fa-star"></i> Reviews
+                            </a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-user"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="tel:+123456789"><i class="fas fa-phone-alt"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-search"></i></a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-flex ms-auto">
+                    <a class="btn btn-primary order-now-btn" href="menu.html" role="button">
+                        <i class="fas fa-shopping-bag"></i> Order Now
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Category Section -->
+
+
+    <!-- Main Content -->
+    <h1>Order Through The Year</h1>
+    <div class="filter-section">
+        <label for="order-filter"></label>
+        <select id="order-filter">
+            <option value="month">Month</option>
+            <option value="year">Year</option>
+            <option value="daily">Daily</option>
+        </select>
+    </div>
+    <img src="/pictures/orders.png" alt="Orders Image">
+
+    <h2>Revenue Through The Year</h2>
+    <div class="filter-section">
+        <label for="revenue-filter"></label>
+        <select id="revenue-filter">
+            <option value="month">Month</option>
+            <option value="year">Year</option>
+            <option value="daily">Daily</option>
+        </select>
+    </div>
+    <img src="/pictures/revenue.png" alt="Revenue Image">
+
+    <h3>Daily Website Visits for Orders</h3>
+    <div class="filter-section">
+        <label for="visits-filter"></label>
+        <select id="visits-filter">
+            <option value="month">Month</option>
+            <option value="year">Year</option>
+            <option value="daily">Daily</option>
+        </select>
+    </div>
+    <img src="pictures/visits.png" alt="Visits Image">
+</body>
+</html>
